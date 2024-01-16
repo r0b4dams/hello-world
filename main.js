@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+const DELAY = 3600;
 const HELLO_WORLD = "Hello, World!";
 
 /**
@@ -8,7 +9,7 @@ const HELLO_WORLD = "Hello, World!";
 function main() {
   const msg = `${HELLO_WORLD} ${date()}`;
   console.log(msg);
-  setTimeout(main, 1000);
+  setTimeout(main, DELAY * 1000);
 }
 
 function date() {
