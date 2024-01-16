@@ -5,6 +5,7 @@ const HELLO_WORLD = "Hello, World!";
 
 /**
  * prints "Hello, World!" with the date and time in PST every DELAY seconds"
+ * runs forever
  */
 function main() {
   const msg = `${HELLO_WORLD} ${date()}`;
