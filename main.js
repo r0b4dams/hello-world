@@ -1,11 +1,11 @@
 #! /usr/bin/env node
 
-const DELAY = 5;
-const LIMIT = 3;
+const DELAY = 6;
+const LIMIT = 10;
 let i = 0;
 /**
  * prints "Hello, World!" every DELAY seconds
- * runs forever
+ * runs for one minute and exits
  */
 (function main() {
   if (i < LIMIT) {
