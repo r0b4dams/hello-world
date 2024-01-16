@@ -1,16 +1,13 @@
 #! /usr/bin/env node
-const readline = require("readline");
 
 const HELLO_WORLD = "Hello, World!";
 
 /**
- *
+ * prints "Hello, World!" with the date and time in PST every DELAY seconds"
  */
 function main() {
-  readline.clearLine(process.stdout);
-  readline.cursorTo(process.stdout, 0);
-
-  process.stdout.write(`${HELLO_WORLD} ${date()}`);
+  const msg = `${HELLO_WORLD} ${date()}`;
+  console.log(msg);
   setTimeout(main, 1000);
 }
 
